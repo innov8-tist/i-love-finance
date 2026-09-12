@@ -6,7 +6,7 @@ import Landingpage from "./pages/Landingpage.tsx";
 import LoginPage from "./pages/login.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
-import Dashboard from "./pages/dashboard.tsx";
+// import Dashboard from "./pages/dashboard.tsx";
 import Dashboard2 from "./components/Dashboard.tsx";
 import Layout from "./components/Layout.tsx";
 import Assistant from "./pages/assistant.tsx";

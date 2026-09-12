@@ -54,7 +54,7 @@ const defaultCreditScoreData: CreditScoreData = {
     credit_history: 3
 };
 
-
+/*
 const calculateCreditScore = (data: CreditScoreData): number => {
     let score = 500;
 
@@ -80,6 +80,7 @@ const calculateCreditScore = (data: CreditScoreData): number => {
     // Clamp score between 300 and 850 (standard credit score range)
     return Math.max(300, Math.min(850, score));
 };
+*/
 
 const getCreditScoreCategory = (score: number): { category: string; color: string } => {
     if (score >= 750) return { category: "Excellent", color: "text-green-600" };
@@ -98,8 +99,8 @@ const FinancialAssistant = () => {
 
     const [creditScoreData, setCreditScoreData] = useState<CreditScoreData>(defaultCreditScoreData);
     const [showCreditScore, setShowCreditScore] = useState<boolean>(false);
-    const [creditScore,setCreditScore] = useState<number>()
-    const creditScoreCategory = getCreditScoreCategory(creditScore);
+    const [creditScore] = useState<number>()
+    const creditScoreCategory = getCreditScoreCategory(creditScore ?? 0);
 
     const handleInputChange = (field: keyof FormData, value: string | number) => {
         setFormData({

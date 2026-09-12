@@ -1,6 +1,6 @@
 'use client';
 
-import { BotIcon, CircleArrowOutDownLeftIcon, ParkingMeterIcon, PlayCircleIcon, SettingsIcon, TvIcon, Download, LogOut } from 'lucide-react';
+import { BotIcon, ParkingMeterIcon, SettingsIcon, Download, LogOut } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 interface NavigationItem {

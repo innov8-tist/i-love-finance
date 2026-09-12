@@ -20,7 +20,7 @@ const IncomeBarChart: React.FC<IncomeBarChartProps> = ({ incomeSources, isLoadin
         return data;
     });
 
-    const CustomTooltip = ({ active, payload, label }: any) => {
+    const CustomTooltip = ({ active, payload }: any) => {
         if (active && payload && payload.length) {
             return (
                 <div className="bg-pink-500 text-white p-2 rounded-md text-sm">
@@ -80,7 +80,7 @@ const IncomeBarChart: React.FC<IncomeBarChartProps> = ({ incomeSources, isLoadin
                             />
                             <YAxis hide={true} />
                             <Tooltip content={<CustomTooltip />} />
-                            {incomeSources?.map((source, index) => (
+                            {incomeSources?.map((source) => (
                                 <Bar
                                     key={source.id}
                                     dataKey={source.name}

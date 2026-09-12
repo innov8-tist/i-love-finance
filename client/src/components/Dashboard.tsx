@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, ArrowUp, ChevronDown, ChevronRight, Plus } from "lucide-react"
@@ -69,9 +68,6 @@ const dashboardData = {
 }
 
 export default function FinancialDashboard() {
-    const [activeTimeframe, setActiveTimeframe] = useState("month")
-    const [activeChartTimeframe, setActiveChartTimeframe] = useState("week")
-
     return (
         <>
             <Navbar />

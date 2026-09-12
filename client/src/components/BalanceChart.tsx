@@ -17,7 +17,7 @@ const BalanceChart: React.FC<BalanceChartProps> = ({ data, isLoading }) => {
       minimumFractionDigits: 0,
     }).format(value);
   };
-  const CustomTooltip = ({ active, payload, label }: any) => {
+  const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-blue-600 text-white p-2 rounded-md text-sm">

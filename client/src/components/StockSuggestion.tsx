@@ -48,7 +48,7 @@ const StockSuggestion = ({ suggestions, onSelectStock }: StockSuggestionProps) =
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (input.trim()) {
-            onSelectStock(input.toUpperCase());
+            onSelectStock(input.toUpperCase(), input.toUpperCase());
             setInput('');
         }
     };
